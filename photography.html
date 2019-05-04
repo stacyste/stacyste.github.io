@@ -96,10 +96,32 @@ img {
 .demo:hover {
   opacity: 1;
 }
+  
+  
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
 </style>
 <body>
-
-<h2 style="text-align:center">Slideshow Gallery</h2>
 
 <div class="container">
   <div class="mySlides">
@@ -159,6 +181,12 @@ img {
       <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
     </div>
   </div>
+</div>
+  
+  <div class="navbar">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
 </div>
 
 <script>
