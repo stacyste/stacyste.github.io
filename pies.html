@@ -115,13 +115,16 @@ body {
 }
 
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: -4px;
 }
 
 .caption-container {
   text-align: center;
   background-color: black;
-  padding: 2px 16px;
+  padding: 2px 20px;
   color: white;
 }
 
@@ -161,13 +164,11 @@ img.hover-shadow {
   </div>
 </div>
   
-  <div class="row">
   <div class="column">
     <img src="pie/5.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
   </div>
   <div class="column">
     <img src="pie/6.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-  </div>
 </div>
 
 <div id="myModal" class="modal">
