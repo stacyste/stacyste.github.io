@@ -10,7 +10,7 @@
 body {
   margin: 0;
   font-family: Arial;
-  background-color: #f1f1f1;
+  background-color: #000000;
 }
 
 /* The grid: Four equal columns that floats next to each other */
@@ -72,10 +72,10 @@ body {
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="pie/1.jpg" alt="Pumpkin Moon" style="width:100%" onclick="myFunction(this);">
+    <img src="pie/1.jpg" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="pie/2.jpg" alt="Lemon Meringue Sun" style="width:100%" onclick="myFunction(this);">
+    <img src="pie/2.jpg" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
     <img src="pie/3.jpg"  style="width:100%" onclick="myFunction(this);">
@@ -83,11 +83,20 @@ body {
   <div class="column">
     <img src="pie/4.jpg" style="width:100%" onclick="myFunction(this);">
   </div>
+  
+    <div class="column">
+    <img src="pie/5.JPG" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+    <div class="column">
+    <img src="pie/6.JPG" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
 </div>
 
 <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:80%" align="center">
+  <img id="expandedImg" align="center" style="width:50%">
   <div id="imgtext"></div>
 </div>
 
