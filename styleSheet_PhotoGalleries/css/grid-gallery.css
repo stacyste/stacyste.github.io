@@ -4,9 +4,9 @@
   --txt-color: #fff;
   --img-bg-color: rgba(240, 240, 240, 0.9);
   --backdrop-color: rgba(240, 240, 240, 0.9);
-  --gap-length: 2px;
-  --row-height: 200px;
-  --column-width: 220px;
+  --gap-length: 8px;  /* size of gaps between photos orig 2 */
+  --row-height: 220px; /* size of grid row height orig 200 */
+  --column-width: 310px; /* size of grid col width orig 220 */
 }
 
 .gg-container *[data-theme="dark"] {
@@ -17,12 +17,24 @@
   --backdrop-color: rgba(30, 30, 30, 0.9);
 }
 
+.gg-container *[data-theme="dksq"] {
+  --main-color: #ddd;
+  --secondary-color: #eee;
+  --txt-color: #111;
+  --img-bg-color: rgba(20, 20, 20, 0.9);
+  --backdrop-color: rgba(30, 30, 30, 0.9);
+  --gap-length: 8px;  /* size of gaps between photos orig 2 */
+  --row-height: 300px; /* size of grid row height orig 200 */
+  --column-width: 300px; /* size of grid col width orig 220 */
+}
+
 .gg-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--column-width), 1fr));
   grid-auto-rows: var(--row-height);
   grid-gap: var(--gap-length);
-  margin: 100px 0;
+  margin: 50px 0; /* size of margin at the top of the page -- leave white for header bar*/
+  padding: 20px; /* white padding around image gallery */
 }
 
 .gg-box img {
@@ -31,10 +43,13 @@
   width: 100%;
   height: 100%;
   background: var(--img-bg-color);
+  border-radius:17px; /* adds image beveled corners */
+  filter: grayscale(var(--value, 100%)); /* makes grid BW */
 }
 
 .gg-box img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+  filter: none; /* makes hover back to colored */
 }
 
 #gg-screen {
@@ -78,6 +93,8 @@
   padding-left: 2px;
   position: fixed;
   bottom: 10px;
+  opacity: 0.8; /* added */
+  border-radius:10px /* added */
 }
 
 .gg-btn:hover {
