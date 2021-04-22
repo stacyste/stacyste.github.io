@@ -1,12 +1,12 @@
 .gg-container {
-  --main-color: #000;
-  --secondary-color: #111;
-  --txt-color: #fff;
-  --img-bg-color: rgba(240, 240, 240, 0.9);
-  --backdrop-color: rgba(240, 240, 240, 0.9);
-  --gap-length: 8px;  /* size of gaps between photos orig 2 */
-  --row-height: 220px; /* size of grid row height orig 200 */
-  --column-width: 310px; /* size of grid col width orig 220 */
+  --main-color: #ddd; /* #000 */
+  --secondary-color: #eee; /* #111 */
+  --txt-color: #111; /* #fff */
+  --img-bg-color: rgba(20, 20, 20, 0.9); /* rgba(240, 240, 240, 0.9) */
+  --backdrop-color: rgba(30, 30, 30, 0.9); /* rgba(240, 240, 240, 0.9)*/
+  --gap-length: 8px;  
+  --row-height: 220px; 
+  --column-width: 310px; 
 }
 
 .gg-container *[data-theme="dark"] {
@@ -15,17 +15,9 @@
   --txt-color: #111;
   --img-bg-color: rgba(20, 20, 20, 0.9);
   --backdrop-color: rgba(30, 30, 30, 0.9);
-}
-
-.gg-container *[data-theme="dksq"] {
-  --main-color: #ddd;
-  --secondary-color: #eee;
-  --txt-color: #111;
-  --img-bg-color: rgba(20, 20, 20, 0.9);
-  --backdrop-color: rgba(30, 30, 30, 0.9);
-  --gap-length: 8px;  /* size of gaps between photos orig 2 */
-  --row-height: 300px; /* size of grid row height orig 200 */
-  --column-width: 300px; /* size of grid col width orig 220 */
+  --gap-length:20px; 
+  --row-height: 500px; /* size of grid row height orig 200 */
+  --column-width: 500px; /* size of grid col width orig 220 */
 }
 
 .gg-box {
