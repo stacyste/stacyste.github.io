@@ -41,7 +41,7 @@
 
 .gg-box img:hover {
   opacity: 0.9;
-  filter: none; /* makes hover back to colored */
+  filter: none; /* or blur(4px), makes hover blurred */
 }
 
 #gg-screen {
