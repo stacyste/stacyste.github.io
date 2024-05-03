@@ -9102,6 +9102,11 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center center; }
 
+img.img-fluid {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
 .image-popup {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
