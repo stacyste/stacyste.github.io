@@ -5290,6 +5290,9 @@ button.bg-light:focus {
 .bg-dark {
   background-color: #343a40 !important; }
 
+  .bg-aerospace {
+    background-color: #00003d !important; }
+
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
